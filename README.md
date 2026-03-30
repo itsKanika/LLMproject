@@ -1,53 +1,69 @@
-# LLM CODE AUTHENTICIT CHECKER
+<h1 align="center" id="title">LLM CODE SECURITY CHECKER</h1>
 
-LLM Code Security & Authenticity Analyzer
-A FastAPI-based security analysis tool that detects suspicious patterns in code using 50+ curated regex patterns and integrates with Bandit for vulnerability scanning. Designed to identify AI-generated code patterns and security risks without ML models.
+<p align="center"><img src="https://drive.google.com/file/d/1cSKbeP_kKi29cPsvPk2HrXP2TdecGXqo/view?usp=drive_link" alt="project-image"></p>
 
-🚀 Features
-50+ Advanced Regex Patterns: Detects suspicious code constructs often found in AI-generated code
+<p id="description">The LLM Code Authenticity &amp; Security Analyzer is designed to detect AI-generated code patterns and potential security vulnerabilities in source code. It leverages 50+ regex rules static analysis and Bandit integration without relying on machine learning. The tool performs pattern-based scanning AST parsing and vulnerability assessment to identify suspicious coding behaviors. It checks for AI code indicators such as generic names and placeholder comments security risks like hardcoded credentials SQL/command injection and insecure file operations as well as code quality issues including broad or empty exception blocks and leftover debug code. The analyzer generates risk scores along with detailed JSON reports containing line-by-line insights and is accessible via a FastAPI REST API for easy code submission and integration. It is ideal for developers educators code reviewers and security teams to verify code authenticity detect vulnerabilities and improve overall code quality.</p>
 
-Bandit Integration: Comprehensive security vulnerability scanning
+<h2>🚀 Demo</h2>
 
-AI Code Detection: Pattern-based identification of LLM-generated code characteristics
+[https://www.youtube.com/watch?v=HYjaUiqGHv0&t=3s](https://www.youtube.com/watch?v=HYjaUiqGHv0&t=3s)
 
-Risk Scoring: Combined scoring system for security and authenticity assessment
+<h2>Project Screenshots:</h2>
 
-REST API: FastAPI backend with comprehensive endpoints
+<img src="https://drive.google.com/file/d/1Et_WcE0_yh8e2RoIHkNcOU0Je54HONuM/view?usp=drive_link" alt="project-screenshot" width="900" px="" height="600">
 
-Code Structure Analysis: AST parsing for deeper code understanding
+<img src="https://drive.google.com/file/d/1Nmtg4NYoPOPRVaSxhEoL6OyCEJ_2IhyQ/view?usp=drive_link" alt="project-screenshot" width="900" px="" height="600">
 
-Detailed Reporting: JSON reports with line-by-line analysis
+<img src="https://drive.google.com/file/d/1-WDK4H74xokvNQTgiPamCKSm_HpXuqYn/view?usp=drive_link" alt="project-screenshot" width="900" px="" height="600">
 
-📋 Pattern Categories
+  
+  
+<h2>🧐 Features</h2>
 
-1. AI Code Indicators
-Generic variable/function names
+Here're some of the project's best features:
 
-Placeholder comments
+*   Detects AI-generated code patterns with 50+ regex rules
+*   Scans for security vulnerabilities using Bandit
+*   Performs AST-based code structure analysis
+*   Generates risk scores for security & authenticity
+*   Provides detailed JSON reports with line-by-line insights
+*   Exposes a REST API for easy integration
 
-Overly verbose error handling
+<h2>🛠️ Installation Steps:</h2>
 
-Unnecessary imports
+<p>1. Create &amp; activate a virtual environment (Python 3.10+ recommended)</p>
 
-Repeated patterns
+```
+python -m venv venv source venv/bin/activate      # Linux / macOS venv\Scripts\activate         # Windows
+```
 
-2. Security Vulnerabilities
-Hardcoded credentials
+<p>2. Install dependencies</p>
 
-SQL injection patterns
+```
+pip install -r requirements.txt
+```
 
-Command injection risks
+<p>3. Start the FastAPI server</p>
 
-Insecure deserialization
+```
+uvicorn main:app --reload
+```
 
-File operation risks
+<p>4. For frontend</p>
 
-3. Code Quality Issues
-Empty exception blocks
+```
+npm run dev
+```
 
-Broad exception handling
+  
+  
+<h2>💻 Built with</h2>
 
-Debug code left in place
+Technologies used in the project:
 
-Incomplete implementations
-
+*   FastAPI
+*   Bandit
+*   Python 3.10+
+*   Regex Pattern Matching
+*   RESTful API
+*   React.js
